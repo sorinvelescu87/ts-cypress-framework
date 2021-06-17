@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:56:10.996Z",
+    "end": "2021-06-17T07:56:15.208Z",
+    "duration": 4212,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0c63e41-218a-480c-b1f7-44af0735f673",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/form-auth.spec.ts",
+      "file": "cypress/integration/herokuapp/form-auth.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "048678b3-f9f4-4bbd-8c25-b2f186ba219e",
+          "title": "Login Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Login Page should have the correct tagline",
+              "timedOut": null,
+              "duration": 1772,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.form_auth.tagLine);",
+              "err": {},
+              "uuid": "e3f2aae3-9432-445b-8f62-7443cf362888",
+              "parentUUID": "048678b3-f9f4-4bbd-8c25-b2f186ba219e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should login unsuccessfully",
+              "fullTitle": "Login Page should login unsuccessfully",
+              "timedOut": null,
+              "duration": 1196,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "formAuth.login(data.form_auth.username, data.form_auth.badPassword);\nformAuth.assertUnsuccessfulLogin();",
+              "err": {},
+              "uuid": "d5489e49-b7e8-4cc9-b896-ac56aca6dc65",
+              "parentUUID": "048678b3-f9f4-4bbd-8c25-b2f186ba219e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should login successfully",
+              "fullTitle": "Login Page should login successfully",
+              "timedOut": null,
+              "duration": 1209,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "formAuth.login(data.form_auth.username, data.form_auth.password);\nformAuth.assertSuccessfulLogin();",
+              "err": {},
+              "uuid": "bb72e8d4-f481-40ce-8787-10b4701703b6",
+              "parentUUID": "048678b3-f9f4-4bbd-8c25-b2f186ba219e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e3f2aae3-9432-445b-8f62-7443cf362888",
+            "d5489e49-b7e8-4cc9-b896-ac56aca6dc65",
+            "bb72e8d4-f481-40ce-8787-10b4701703b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4177,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

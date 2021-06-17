@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:56:24.475Z",
+    "end": "2021-06-17T07:56:26.971Z",
+    "duration": 2496,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "720300a1-a106-4759-b14d-28de33020eb7",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/horizontal-slider.spec.ts",
+      "file": "cypress/integration/herokuapp/horizontal-slider.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c251717b-ddbb-44c8-a0fb-1076c2b56b94",
+          "title": "Horizontal Slider",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Horizontal Slider should have the correct tagline",
+              "timedOut": null,
+              "duration": 2222,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.horizontal_slider.tagLine);",
+              "err": {},
+              "uuid": "3734c4bd-5157-4db5-92b9-e23a8f804bcd",
+              "parentUUID": "c251717b-ddbb-44c8-a0fb-1076c2b56b94",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should update slider",
+              "fullTitle": "Horizontal Slider should update slider",
+              "timedOut": null,
+              "duration": 246,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "slider.updateInputValue(3);\nslider.assertValue(3);",
+              "err": {},
+              "uuid": "3fa12daf-e9d1-4eb5-9bd9-9eb8b0dd783d",
+              "parentUUID": "c251717b-ddbb-44c8-a0fb-1076c2b56b94",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3734c4bd-5157-4db5-92b9-e23a8f804bcd",
+            "3fa12daf-e9d1-4eb5-9bd9-9eb8b0dd783d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2468,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

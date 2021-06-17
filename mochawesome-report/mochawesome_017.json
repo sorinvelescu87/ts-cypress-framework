@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:56:18.048Z",
+    "end": "2021-06-17T07:56:21.629Z",
+    "duration": 3581,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c083502-a03a-4806-baf1-69c79eb8a4bf",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/frames.spec.ts",
+      "file": "cypress/integration/herokuapp/frames.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "18d931a2-7b43-4e0c-a289-7983e9523bce",
+          "title": "Frames",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Frames should have the correct tagline",
+              "timedOut": null,
+              "duration": 1376,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.frames.tagLine);",
+              "err": {},
+              "uuid": "49c07120-34e8-4f29-bcea-aceeec00f192",
+              "parentUUID": "18d931a2-7b43-4e0c-a289-7983e9523bce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "19d4f424-18f0-43df-a5c8-18c50bf58734",
+              "title": "Nested Frames",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should assert correctly frames text",
+                  "fullTitle": "Frames Nested Frames should assert correctly frames text",
+                  "timedOut": null,
+                  "duration": 754,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "frames.goToExample('Nested');\ncy.get('frame[name=\"frame-top\"]').its('0.contentDocument').should('exist').then(function (content) {\n    cy.wrap(content).its('body').should('not.be.undefined').then(cy.wrap).find('frame[name=\"frame-left\"]').its('0.contentDocument').should('exist');\n});",
+                  "err": {},
+                  "uuid": "6a48ffc3-b9e2-426a-98fa-f2fea8b94636",
+                  "parentUUID": "19d4f424-18f0-43df-a5c8-18c50bf58734",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6a48ffc3-b9e2-426a-98fa-f2fea8b94636"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 754,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "471444b1-aa30-405c-9701-f44f6c5c833d",
+              "title": "iframe",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should have correct content in iframe",
+                  "fullTitle": "Frames iframe should have correct content in iframe",
+                  "timedOut": null,
+                  "duration": 1396,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "frames.goToExample('iFrame');\ncy.get('#mce_0_ifr').its('0.contentDocument').should('exist').then(function (content) {\n    cy.wrap(content).its('body').should('not.be.undefined').then(cy.wrap).find('p').should('have.text', 'Your content goes here.');\n});",
+                  "err": {},
+                  "uuid": "76488ac2-dd27-4645-8e7b-a43402130e76",
+                  "parentUUID": "471444b1-aa30-405c-9701-f44f6c5c833d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "76488ac2-dd27-4645-8e7b-a43402130e76"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1396,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [
+            "49c07120-34e8-4f29-bcea-aceeec00f192"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1376,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

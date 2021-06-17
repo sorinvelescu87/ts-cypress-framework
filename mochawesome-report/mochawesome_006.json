@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:54:34.459Z",
+    "end": "2021-06-17T07:54:36.725Z",
+    "duration": 2266,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aa69a96b-ea93-4da2-a395-c862ef275f2d",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/drag-drop.spec.ts",
+      "file": "cypress/integration/herokuapp/drag-drop.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7aa7471-ae7c-4f2d-a04d-48434d77d896",
+          "title": "Drag and Drop",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Drag and Drop should have the correct tagline",
+              "timedOut": null,
+              "duration": 1883,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.drag_drop.tagLine);",
+              "err": {},
+              "uuid": "47dc345d-a775-40ba-aeff-028dccfb6d97",
+              "parentUUID": "e7aa7471-ae7c-4f2d-a04d-48434d77d896",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "drags and drops",
+              "fullTitle": "Drag and Drop drags and drops",
+              "timedOut": null,
+              "duration": 358,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "drg.getColumnAHeader().should('have.text', 'A');\ndrg.getColumnBHeader().should('have.text', 'B');\ndrg.drag();\ndrg.getColumnAHeader().should('have.text', 'B');\ndrg.getColumnBHeader().should('have.text', 'A');",
+              "err": {},
+              "uuid": "b2efc289-a2bd-4ee5-9200-bdec26f08f5a",
+              "parentUUID": "e7aa7471-ae7c-4f2d-a04d-48434d77d896",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "47dc345d-a775-40ba-aeff-028dccfb6d97",
+            "b2efc289-a2bd-4ee5-9200-bdec26f08f5a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2241,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

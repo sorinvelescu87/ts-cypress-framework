@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:55:55.026Z",
+    "end": "2021-06-17T07:55:57.737Z",
+    "duration": 2711,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5c29232-a0e9-4d07-becb-188cbb86f4d6",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/floating-menu.spec.ts",
+      "file": "cypress/integration/herokuapp/floating-menu.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "845ee5f3-8029-49b3-ba52-7508dee798b7",
+          "title": "Floating Menu",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Floating Menu should have the correct tagline",
+              "timedOut": null,
+              "duration": 2312,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.floating_menu.tagLine);",
+              "err": {},
+              "uuid": "33100289-6c68-4ae5-bebe-86f3b3db3ed4",
+              "parentUUID": "845ee5f3-8029-49b3-ba52-7508dee798b7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should scroll page and menu should be in viewport",
+              "fullTitle": "Floating Menu should scroll page and menu should be in viewport",
+              "timedOut": null,
+              "duration": 367,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "floating.getMenu().should('be.visible.and.inViewport');\nfloating.pageFooter().should('not.be.inViewport');\ncy.scrollTo('bottom');\nfloating.getMenu().should('be.visible.and.inViewport');\nfloating.pageFooter().should('be.visible.and.inViewport');",
+              "err": {},
+              "uuid": "ffe8fc67-2e90-4cbb-8700-74def24f4313",
+              "parentUUID": "845ee5f3-8029-49b3-ba52-7508dee798b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "33100289-6c68-4ae5-bebe-86f3b3db3ed4",
+            "ffe8fc67-2e90-4cbb-8700-74def24f4313"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2679,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

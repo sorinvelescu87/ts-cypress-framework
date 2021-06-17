@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:54:13.092Z",
+    "end": "2021-06-17T07:54:16.222Z",
+    "duration": 3130,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3f3e2b39-8b8c-409b-a588-7d9ebe3c00f1",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/challenging-dom.spec.ts",
+      "file": "cypress/integration/herokuapp/challenging-dom.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+          "title": "Challenging DOM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Challenging DOM should have the correct tagline",
+              "timedOut": null,
+              "duration": 1763,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.challenging_dom.tagLine);",
+              "err": {},
+              "uuid": "7a018583-d23f-4be9-a5c5-1d57ea660b41",
+              "parentUUID": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should have 3 buttons in the left sidebar",
+              "fullTitle": "Challenging DOM should have 3 buttons in the left sidebar",
+              "timedOut": null,
+              "duration": 264,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertLength(cDOM.getLeftButtons(), 3);",
+              "err": {},
+              "uuid": "a6d921d2-fbc9-4a09-ae94-de319207acf8",
+              "parentUUID": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should assert that each row has an edit button",
+              "fullTitle": "Challenging DOM should assert that each row has an edit button",
+              "timedOut": null,
+              "duration": 334,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cDOM.assertRowsContainSelector(cDOM.editButton());",
+              "err": {},
+              "uuid": "66175fc0-7ef6-4a1c-92fb-d357e3c395f0",
+              "parentUUID": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should assert that each row has a Delete button",
+              "fullTitle": "Challenging DOM should assert that each row has a Delete button",
+              "timedOut": null,
+              "duration": 479,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cDOM.assertRowsContainSelector(cDOM.deleteButton());",
+              "err": {},
+              "uuid": "ba70242e-e4e9-4318-8870-cf6085f330e7",
+              "parentUUID": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display canvas",
+              "fullTitle": "Challenging DOM should display canvas",
+              "timedOut": null,
+              "duration": 236,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertElementIsDisplayed('#canvas');",
+              "err": {},
+              "uuid": "9a45d0f5-9187-4024-b7e9-07177eb2623c",
+              "parentUUID": "60b18bd5-f99c-437c-b979-acbcdfeb4dcb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7a018583-d23f-4be9-a5c5-1d57ea660b41",
+            "a6d921d2-fbc9-4a09-ae94-de319207acf8",
+            "66175fc0-7ef6-4a1c-92fb-d357e3c395f0",
+            "ba70242e-e4e9-4318-8870-cf6085f330e7",
+            "9a45d0f5-9187-4024-b7e9-07177eb2623c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3076,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

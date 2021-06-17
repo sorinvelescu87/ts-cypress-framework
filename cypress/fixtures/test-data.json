@@ -1,0 +1,183 @@
+{
+   "abtesting": {
+        "path": "/abtest",
+        "tagLine": "A/B Testing"
+    },
+    "add_remove": {
+        "path": "/add_remove_elements/",
+        "tagLine": "Add/Remove Elements"
+    },
+    "basic_auth": {
+        "path": "/basic_auth",
+        "tagLine": "Basic Auth"
+    },
+    "broken_images": {
+        "path": "/broken_images",
+        "tagLine": "Broken Images"
+    },
+    "challenging_dom": {
+        "path": "/challenging_dom",
+        "tagLine": "Challenging DOM"
+    },
+    "checkboxes": {
+        "path": "/checkboxes",
+        "tagLine": "Checkboxes"
+    },
+    "context_menu": {
+        "path": "/context_menu",
+        "tagLine": "Context Menu",
+        "alertText": "You selected a context menu"
+    },
+    "digest_auth": {
+        "path": "/digest_auth",
+        "tagLine": "Digest Authentication"
+    },
+    "disappearing_elements": {
+        "path": "/disappearing_elements",
+        "tagLine": "Disappearing Elements"
+    },
+    "drag_drop": {
+        "path": "/drag_and_drop",
+        "tagLine": "Drag and Drop"
+    },
+    "dropdown": {
+        "path": "/dropdown",
+        "tagLine": "Dropdown List"
+    },
+    "dynamic_content": {
+        "path": "/dynamic_content",
+        "tagLine": "Dynamic Content"
+    },
+    "dynamic_controls": {
+        "path": "/dynamic_controls",
+        "tagLine": "Dynamic Controls"
+    },
+    "dynamic_loading": {
+        "path": "/dynamic_loading",
+        "tagLine": "Dynamically Loaded Page Elements"
+    },
+    "entry_ad": {
+        "path": "/entry_ad",
+        "tagLine": "Entry Ad"
+    },
+    "exit_intent": {
+        "path": "/exit_intent",
+        "tagLine": "Exit Intent"
+    },
+    "file_download": {
+        "path": "/download",
+        "tagLine": "File Downloader",
+        "fileTxt": "This is a text file to upload."
+    },
+    "file_upload": {
+        "path": "/upload",
+        "tagLine": "File Uploader"
+    },
+    "floating_menu": {
+        "path": "/floating_menu",
+        "tagLine": "Floating Menu"
+    },
+    "forgot_password": {
+        "path": "/forgot_password",
+        "tagLine": "Forgot Password"
+    },
+    "form_auth": {
+        "path": "/login",
+        "tagLine": "Login Page",
+        "username": "tomsmith",
+        "password": "SuperSecretPassword!",
+        "badPassword": "asdasruasdnkasf"
+    },
+    "frames": {
+        "path": "/frames",
+        "tagLine": "Frames"
+    },
+    "geolocation": {
+        "path": "/geolocation",
+        "tagLine": "Geolocation"
+    },
+    "horizontal_slider": {
+        "path": "/horizontal_slider",
+        "tagLine": "Horizontal Slider"
+    },
+    "hovers": {
+        "path": "/hovers",
+        "tagLine": "Hovers"
+    },
+    "infinite_scroll": {
+        "path": "/infinite_scroll",
+        "tagLine": "Infinite Scroll"
+    },
+    "inputs": {
+        "path": "/inputs",
+        "tagLine": "Inputs"
+    },
+    "jquery_menus": {
+        "path": "/jqueryui/menu",
+        "tagLine": "JQuery UI Menus"
+    },
+    "js_alerts": {
+        "path": "/javascript_alerts",
+        "tagLine": "JavaScript Alerts"
+    },
+    "js_error": {
+        "path": "/javascript_error",
+        "tagLine": "JavaScript onload event error"
+    },
+    "key_presses": {
+        "path": "/key_presses",
+        "tagLine": "Key Presses"
+    },
+    "large_dom": {
+        "path": "/large",
+        "tagLine": "Large & Deep DOM"
+    },
+    "windows": {
+        "path": "/windows",
+        "tagLine": "Opening a new window"
+    },
+    "nested_frames": {
+        "path": "/nested_frames",
+        "tagLine": "Nested Frames"
+    },
+    "notifications": {
+        "path": "/notification_message",
+        "tagLine": "Notification Messages"
+    },
+    "redirect_link": {
+        "path": "/redirector",
+        "tagLine": "Redirection"
+    },
+    "secure_file_download": {
+        "path": "/download_secure",
+        "tagLine": "Secure File Download"
+    },
+    "shadow_dom": {
+        "path": "/shadowdom",
+        "tagLine": "Shadow DOM"
+    },
+    "shifting_content": {
+        "path": "/shifting_content",
+        "tagLine": "Shifting Content"
+    },
+    "slow_resources": {
+        "path": "/slow",
+        "tagLine": "Slow Resources"
+    },
+    "sortable_data_tables": {
+        "path": "/tables",
+        "tagLine": "Sortable Data Tables"
+    },
+    "status_codes": {
+        "path": "/status_codes",
+        "tagLine": "Status Codes"
+    },
+    "typos": {
+        "path": "/typos",
+        "tagLine": "Typos"
+    },
+    "wysiwyg": {
+        "path": "/tinymce",
+        "tagLine": "WYSIWYG Editor"
+    }
+}

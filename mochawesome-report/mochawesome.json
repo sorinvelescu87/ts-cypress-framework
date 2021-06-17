@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:54:00.450Z",
+    "end": "2021-06-17T07:54:05.197Z",
+    "duration": 4747,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "64101e1d-ce43-4438-b1a2-fa942cf08016",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/add-remove.spec.ts",
+      "file": "cypress/integration/herokuapp/add-remove.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+          "title": "Add/Remove Elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tag line",
+              "fullTitle": "Add/Remove Elements should have the correct tag line",
+              "timedOut": null,
+              "duration": 1971,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.add_remove.tagLine);",
+              "err": {},
+              "uuid": "bbcd572e-9b57-4e1b-a2ca-8da23577955d",
+              "parentUUID": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add an element",
+              "fullTitle": "Add/Remove Elements should add an element",
+              "timedOut": null,
+              "duration": 326,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.clickOn(addRemove.getAddElementButton());\nutils.assertLength(addRemove.getDeleteElements(), 1);",
+              "err": {},
+              "uuid": "3bee535b-059b-44a5-bcf9-de40e6b820df",
+              "parentUUID": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add more elements",
+              "fullTitle": "Add/Remove Elements should add more elements",
+              "timedOut": null,
+              "duration": 634,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addRemove.addElements(5);\nutils.assertLength(addRemove.getDeleteElements(), 5);",
+              "err": {},
+              "uuid": "4d42b713-f2ee-4de9-9747-a616b5be7ba8",
+              "parentUUID": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should remove the last button",
+              "fullTitle": "Add/Remove Elements should remove the last button",
+              "timedOut": null,
+              "duration": 718,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addRemove.addElements(5);\naddRemove.deleteNthElement(5);\nutils.assertLength(addRemove.getDeleteElements(), 4);",
+              "err": {},
+              "uuid": "3992b008-7edd-478e-a480-cfe5c17d9dcf",
+              "parentUUID": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should delete all elements",
+              "fullTitle": "Add/Remove Elements should delete all elements",
+              "timedOut": null,
+              "duration": 1053,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "addRemove.addElements(5);\naddRemove.deleteAllElements();\nutils.elementShouldNotExist(addRemove.getDeleteElements());",
+              "err": {},
+              "uuid": "b8938f0f-d75f-4d87-9a4a-2bbff5da80e2",
+              "parentUUID": "f632902f-91b4-4f0d-a059-5c55cfedc6d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bbcd572e-9b57-4e1b-a2ca-8da23577955d",
+            "3bee535b-059b-44a5-bcf9-de40e6b820df",
+            "4d42b713-f2ee-4de9-9747-a616b5be7ba8",
+            "3992b008-7edd-478e-a480-cfe5c17d9dcf",
+            "b8938f0f-d75f-4d87-9a4a-2bbff5da80e2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4702,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

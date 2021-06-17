@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-17T07:54:53.048Z",
+    "end": "2021-06-17T07:55:14.197Z",
+    "duration": 21149,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "53dcb63d-a321-4bf3-b167-13150f7be085",
+      "title": "",
+      "fullFile": "cypress/integration/herokuapp/dynamic-controls.spec.ts",
+      "file": "cypress/integration/herokuapp/dynamic-controls.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+          "title": "Dynamic Controls",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the correct tagline",
+              "fullTitle": "Dynamic Controls should have the correct tagline",
+              "timedOut": null,
+              "duration": 1823,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utils.assertTagLine(data.dynamic_controls.tagLine);",
+              "err": {},
+              "uuid": "32f834a5-3658-455f-b500-fcc93a39c08d",
+              "parentUUID": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should remove checkbox",
+              "fullTitle": "Dynamic Controls should remove checkbox",
+              "timedOut": null,
+              "duration": 3315,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.removeCheckbox();",
+              "err": {},
+              "uuid": "56d839f4-bc15-401b-aba3-1b82ed8b2203",
+              "parentUUID": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should add checkbox",
+              "fullTitle": "Dynamic Controls should add checkbox",
+              "timedOut": null,
+              "duration": 6315,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.removeCheckbox();\nutils.clickOn(dynamic.getCheckboxButton());\ndynamic.getCheckboxMessage().should('have.text', 'It\\'s back!');\ndynamic.getCheckboxButton().should('have.text', 'Remove');",
+              "err": {},
+              "uuid": "d82ed90b-55a4-477e-b8c9-20088659ebcc",
+              "parentUUID": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should enable text input",
+              "fullTitle": "Dynamic Controls should enable text input",
+              "timedOut": null,
+              "duration": 3289,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.enableInputText();",
+              "err": {},
+              "uuid": "c5ff3258-8454-4896-9769-fd44f1b34517",
+              "parentUUID": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should disable input text",
+              "fullTitle": "Dynamic Controls should disable input text",
+              "timedOut": null,
+              "duration": 6348,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dynamic.enableInputText();\ndynamic.disableInputText();",
+              "err": {},
+              "uuid": "93226675-3a53-4918-8824-f2c6c70083f2",
+              "parentUUID": "4e4a9d34-d48e-4192-81cb-863f5717dc6e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "32f834a5-3658-455f-b500-fcc93a39c08d",
+            "56d839f4-bc15-401b-aba3-1b82ed8b2203",
+            "d82ed90b-55a4-477e-b8c9-20088659ebcc",
+            "c5ff3258-8454-4896-9769-fd44f1b34517",
+            "93226675-3a53-4918-8824-f2c6c70083f2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21090,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
